@@ -1,0 +1,47 @@
+{
+  "id": "a3f8c2d1-7b4e-4f9a-8c3d-2e1f5a7b9c0d",
+  "name": "Sample Dataset",
+  "version": 3,
+  "active": true,
+  "score": 98.6,
+  "tags": ["alpha", "beta", "gamma"],
+  "metadata": {
+    "createdAt": "2026-03-09T10:42:00Z",
+    "updatedAt": "2026-03-09T14:55:30Z",
+    "author": "Jane Doe",
+    "region": "us-west-2"
+  },
+  "items": [
+    {
+      "id": 1,
+      "label": "Widget A",
+      "quantity": 42,
+      "price": 19.99,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "label": "Widget B",
+      "quantity": 7,
+      "price": 149.5,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "label": "Widget C",
+      "quantity": 200,
+      "price": 4.25,
+      "inStock": true
+    }
+  ],
+  "config": {
+    "maxRetries": 5,
+    "timeout": 3000,
+    "features": {
+      "darkMode": false,
+      "notifications": true,
+      "analytics": true
+    }
+  },
+  "notes": null
+}
