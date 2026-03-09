@@ -1,0 +1,26 @@
+{
+  "id": "a3f9b2c1-7e4d-4f8a-b3c2-1d5e6f7a8b9c",
+  "name": "Jane Doe",
+  "age": 34,
+  "email": "jane.doe@example.com",
+  "active": true,
+  "score": 87.4,
+  "tags": ["developer", "designer", "mentor"],
+  "address": {
+    "street": "742 Evergreen Terrace",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701"
+  },
+  "preferences": {
+    "theme": "dark",
+    "notifications": false,
+    "language": "en-US"
+  },
+  "history": [
+    { "date": "2025-11-03", "action": "login", "ip": "192.168.1.42" },
+    { "date": "2025-12-17", "action": "purchase", "amount": 49.99 },
+    { "date": "2026-01-08", "action": "logout", "ip": "10.0.0.5" }
+  ],
+  "metadata": null
+}
