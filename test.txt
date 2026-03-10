@@ -1,10 +1,9 @@
+The quick brown fox jumps over the lazy dog.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-Quisque vehicula turpis nec nulla fermentum, at tincidunt justo cursus.
-Cras volutpat, libero at fermentum gravida, arcu nisi facilisis nunc, vel efficitur odio eros ac est.
-Fusce auctor metus a ligula tincidunt, sit amet sodales orci viverra.
-Integer pharetra sapien vel nisi elementum, at convallis urna pulvinar.
-Sed euismod velit ac est dignissim, non pretium est laoreet.
-Nulla facilisi. Donec ac felis et mi volutpat bibendum.
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-Proin malesuada orci eget libero tincidunt, at posuere lectus cursus.
+Pack my box with five dozen liquor jugs.
+How vexingly quick daft zebras jump!
+The five boxing wizards jump quickly.
+Sphinx of black quartz, judge my vow.
+Random number: 47829361
+Timestamp: 2026-03-10
+abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
