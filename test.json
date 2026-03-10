@@ -1,0 +1,26 @@
+{
+  "id": "a3f9c2d1-8b47-4e6a-91bc-0d5e7f832104",
+  "name": "Sample User",
+  "age": 34,
+  "email": "sample.user@example.com",
+  "active": true,
+  "score": 87.4,
+  "tags": ["alpha", "beta", "gamma"],
+  "address": {
+    "street": "742 Evergreen Terrace",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62704"
+  },
+  "metadata": {
+    "createdAt": "2025-11-03T14:22:00Z",
+    "updatedAt": "2026-01-17T09:05:43Z",
+    "version": 3
+  },
+  "preferences": {
+    "notifications": true,
+    "theme": "dark",
+    "language": "en-US"
+  },
+  "scores": [42, 91, 67, 58, 73]
+}
