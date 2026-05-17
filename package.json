@@ -4,7 +4,7 @@
   "description": "emotif backend using parse-server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test 'chat/messaging/test/*.test.js' && node test/presence.test.js",
     "start": "node server.js"
   },
   "repository": "www.github.com/hanseungwook/emotif_parse",

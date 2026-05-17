@@ -28,6 +28,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 app.use('/parse', api);
 
+// Chat app shell (vanilla JS, no build step). Served from /app/.
+app.use('/app', express.static(__dirname + '/frontend'));
+
 app.get('/', function(req, res) {
   res.status(200).send('Routing working');
 });

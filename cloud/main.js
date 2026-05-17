@@ -7,6 +7,9 @@ var stripe = require('stripe')(process.env.STRIPEAPIKEY),
 
 const uuidV1 = require('uuid/v1');
 
+// Presence signals subsystem: typing indicators, participant activity.
+require('./presence.js');
+
 // mongoose.connect(process.env.MONGODB_URI);
 
 // Test hello function
