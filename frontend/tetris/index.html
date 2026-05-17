@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Tetris Playfield Rendering</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="tetris-shell">
+    <header class="tetris-header">
+      <h1>Tetris — Playfield Rendering</h1>
+      <p class="tetris-subtitle">
+        Demo of the canvas rendering subsystem. Active piece, ghost projection, settled blocks,
+        and animated polish (line clears, hard drop, lock flash, level up, pause, game over).
+      </p>
+      <p class="tetris-subtitle">
+        See also: <a href="./hud.html">HUD subsystem demo</a>.
+      </p>
+    </header>
+    <section class="tetris-stage">
+      <canvas id="tetris-canvas" aria-label="Tetris playfield"></canvas>
+      <aside class="tetris-controls">
+        <h2>Demo controls</h2>
+        <div class="tetris-button-row">
+          <button type="button" data-action="line-clear">Line clear</button>
+          <button type="button" data-action="lock-flash">Lock flash</button>
+          <button type="button" data-action="hard-drop">Hard drop</button>
+          <button type="button" data-action="level-up">Level up</button>
+        </div>
+        <div class="tetris-button-row">
+          <button type="button" data-action="pause">Toggle pause</button>
+          <button type="button" data-action="game-over">Game over</button>
+          <button type="button" data-action="reset">Reset</button>
+          <button type="button" data-action="toggle-ghost">Toggle ghost</button>
+        </div>
+        <div class="tetris-status" id="tetris-status"></div>
+        <p class="tetris-help">
+          Use the buttons to exercise the rendering subsystem. The synthetic state on
+          the right has nothing to do with real gameplay — gameplay is owned by the
+          Game Core module and routes its state snapshot through this renderer.
+        </p>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
