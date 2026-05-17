@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Modern Tetris HUD</title>
+  <link rel="stylesheet" href="./hud.css" />
+</head>
+<body>
+  <main class="tetris-page">
+    <header class="tetris-page__header">
+      <h1>Modern Tetris HUD</h1>
+      <p class="tetris-page__sub">
+        Stand-alone HUD subsystem demo. The playfield placeholder reflects
+        run state; the side rail is the production HUD.
+      </p>
+    </header>
+
+    <div class="tetris-stage">
+      <section class="playfield" aria-label="Playfield placeholder">
+        <div class="playfield__grid" data-grid></div>
+        <div class="playfield__overlay" data-hud-mount="overlay"></div>
+      </section>
+
+      <aside class="tetris-rail" aria-label="HUD">
+        <div data-hud-mount="next"></div>
+        <div data-hud-mount="score"></div>
+        <div class="tetris-rail__hint">
+          <h3>Controls (demo)</h3>
+          <ul>
+            <li><kbd>Space</kbd> simulate clear</li>
+            <li><kbd>P</kbd> toggle pause</li>
+            <li><kbd>G</kbd> trigger game over</li>
+            <li><kbd>R</kbd> restart</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="./main.mjs"></script>
+</body>
+</html>
