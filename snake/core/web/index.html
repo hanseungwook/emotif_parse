@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Snake — Core Workflow</title>
+  <meta name="theme-color" content="#0a0e1f" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="snake-app" role="main">
+    <aside class="snake-side">
+      <section class="snake-card" aria-label="Game stats">
+        <h2>Game</h2>
+        <div class="snake-stats">
+          <div class="snake-stat">
+            <span class="snake-stat__label">Score</span>
+            <span class="snake-stat__value" id="snake-score">0</span>
+          </div>
+          <div class="snake-stat">
+            <span class="snake-stat__label">Best</span>
+            <span class="snake-stat__value" id="snake-best">0</span>
+          </div>
+          <div class="snake-stat">
+            <span class="snake-stat__label">Length</span>
+            <span class="snake-stat__value" id="snake-length">3</span>
+          </div>
+          <div class="snake-stat">
+            <span class="snake-stat__label">Speed</span>
+            <span class="snake-stat__value" id="snake-speed">140ms</span>
+          </div>
+        </div>
+        <div style="margin-top: 12px">
+          <div class="snake-status" id="snake-status" data-status="idle">Press start to play</div>
+          <p class="snake-message" id="snake-message"></p>
+        </div>
+      </section>
+
+      <section class="snake-card" aria-label="Mode">
+        <h2>Mode</h2>
+        <div class="snake-mode-row">
+          <label for="snake-mode">Game mode</label>
+          <select id="snake-mode" aria-label="Game mode">
+            <option value="classic">Classic</option>
+            <option value="obstacle">Obstacle Mode</option>
+          </select>
+        </div>
+        <p class="snake-message" style="margin-top: 8px">
+          Switching mode mid-run takes effect on the next reset.
+        </p>
+      </section>
+
+      <section class="snake-card" aria-label="Skin">
+        <h2>Snake Skins</h2>
+        <div class="snake-skins" id="snake-skins" role="radiogroup" aria-label="Choose snake skin"></div>
+      </section>
+
+      <section class="snake-card" aria-label="Controls">
+        <h2>Controls</h2>
+        <div class="snake-controls">
+          <button type="button" class="snake-btn" id="snake-start">Start</button>
+          <button type="button" class="snake-btn snake-btn--ghost" id="snake-reset">Reset</button>
+        </div>
+        <p class="snake-keys" style="margin-top: 10px">
+          Move with <code>←</code> <code>↑</code> <code>↓</code> <code>→</code> or <code>WASD</code> —
+          pause with <code>Space</code>, reset with <code>R</code>.
+        </p>
+      </section>
+    </aside>
+
+    <section class="snake-main">
+      <header class="snake-header">
+        <h1>Modern Snake</h1>
+        <span class="snake-header__sub">Core workflow</span>
+      </header>
+      <div class="snake-board">
+        <canvas id="snake-canvas" width="400" height="400" tabindex="0" aria-label="Snake board"></canvas>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./bootstrap.js"></script>
+</body>
+</html>
