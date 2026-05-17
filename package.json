@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node --test 'chat/messaging/test/*.test.js' 'tetris/**/test/*.test.js' && node test/presence.test.js",
+    "test:tetris": "node --test 'tetris/**/test/*.test.js'",
     "start": "node server.js"
   },
   "repository": "www.github.com/hanseungwook/emotif_parse",
