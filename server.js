@@ -31,6 +31,13 @@ app.use('/parse', api);
 // Chat app shell (vanilla JS, no build step). Served from /app/.
 app.use('/app', express.static(__dirname + '/frontend'));
 
+// Tetris rendering subsystem — browser bundle generated from CommonJS source.
+var buildTetrisBundle = require('./tetris/rendering/browserBundle').buildBrowserBundle;
+app.get('/tetris/rendering.bundle.js', function(req, res) {
+  res.set('Content-Type', 'application/javascript; charset=utf-8');
+  res.send(buildTetrisBundle());
+});
+
 app.get('/', function(req, res) {
   res.status(200).send('Routing working');
 });
