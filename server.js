@@ -31,6 +31,10 @@ app.use('/parse', api);
 // Chat app shell (vanilla JS, no build step). Served from /app/.
 app.use('/app', express.static(__dirname + '/frontend'));
 
+// Modern Snake — core-workflow standalone demo. Loads the engine bundle as
+// an ES module; no build step required.
+app.use('/snake', express.static(__dirname + '/snake/core/web'));
+
 app.get('/', function(req, res) {
   res.status(200).send('Routing working');
 });
