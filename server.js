@@ -38,6 +38,12 @@ app.get('/tetris/rendering.bundle.js', function(req, res) {
   res.send(buildTetrisBundle());
 });
 
+// Modern Snake product shell (vanilla JS, no build step). Served from /snake/.
+// The standalone engine demo at snake/core/web/ is reachable at
+// /snake/core/web/index.html through this same mount.
+app.use('/snake', express.static(__dirname + '/snake'));
+app.use('/snake-engine', express.static(__dirname + '/snake/core/web'));
+
 app.get('/', function(req, res) {
   res.status(200).send('Routing working');
 });
