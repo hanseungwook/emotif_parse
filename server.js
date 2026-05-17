@@ -31,6 +31,9 @@ app.use('/parse', api);
 // Chat app shell (vanilla JS, no build step). Served from /app/.
 app.use('/app', express.static(__dirname + '/frontend'));
 
+// Modern Snake shell (vanilla JS, no build step). Served from /snake/.
+app.use('/snake', express.static(__dirname + '/snake'));
+
 app.get('/', function(req, res) {
   res.status(200).send('Routing working');
 });
